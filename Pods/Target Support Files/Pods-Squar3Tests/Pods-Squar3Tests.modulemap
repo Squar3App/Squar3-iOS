@@ -1,0 +1,6 @@
+framework module Pods_Squar3Tests {
+  umbrella header "Pods-Squar3Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
