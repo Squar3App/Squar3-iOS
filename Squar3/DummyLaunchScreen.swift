@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class DummyLaunchScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if userUIDConstant != nil {
+            let reference = Database.database().reference()
+            reference.child("Users").child(userUIDConstant!).child("name").observeSingleEvent(of: .value, with: { (snapshot) in
+                if let name = snapshot.value as? String {
+                    nameConstant = name
+                    print(userUIDConstant!)
+                    self.performSegue(withIdentifier: "DummySplashScreen", sender: nil)
+                }
+            })
+        }
         // Do any additional setup after loading the view.
     }
 

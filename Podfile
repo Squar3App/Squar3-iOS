@@ -9,10 +9,6 @@ target 'Squar3' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
-
-  target 'Squar3Tests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'Firebase/Storage'
 
 end

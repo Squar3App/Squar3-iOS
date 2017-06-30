@@ -18,6 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        var reference = Database.database().reference()
+        if UserDefaults.standard.value(forKey: "username") != nil && UserDefaults.standard.value(forKey: "password") != nil && UserDefaults.standard.value(forKey: "userUID") != nil{
+            userUIDConstant = UserDefaults.standard.value(forKey: "userUID") as! String
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController: DummyLaunchScreen = mainStoryboard.instantiateViewController(withIdentifier: "DummySplashScreen") as! DummyLaunchScreen
+            self.window?.rootViewController = initialViewController
+            }
+        else {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController: ViewController = mainStoryboard.instantiateViewController(withIdentifier: "ChooseViewController") as! ViewController
+            self.window?.rootViewController = initialViewController
+        }
         return true
     }
     

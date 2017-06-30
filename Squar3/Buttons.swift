@@ -18,7 +18,7 @@ extension UIButton {
             _materialKey = newValue
             if _materialKey == true {
                 self.layer.masksToBounds = false
-                self.layer.cornerRadius = self.frame.height * 0.5
+                self.layer.cornerRadius = self.frame.height * 0.15
             }
             else {
                 self.layer.cornerRadius = 3.0

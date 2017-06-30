@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+
+private var _roundedImages = false
+extension UIImageView {
+    @IBInspectable var roundedImages: Bool {
+        get {
+            return _roundedImages
+        } set {
+            _roundedImages = newValue
+            if _roundedImages == true {
+                self.layer.masksToBounds = false
+                self.layer.cornerRadius = self.frame.height * 0.5
+            }
+        }
+    }
+}

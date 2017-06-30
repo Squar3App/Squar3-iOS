@@ -2,7 +2,7 @@
 //  Border.swift
 //  techLab
 //
-//  Created by Neel Khattri on 6/24/17.
+//  Created by Ryan Cheng on 6/24/17.
 //  Copyright © 2017 SimpleStuff. All rights reserved.
 //
 
