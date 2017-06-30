@@ -1,3 +1,4 @@
+
 //
 //  DummyLaunchScreen.swift
 //  Squar3
@@ -16,12 +17,16 @@ class DummyLaunchScreen: UIViewController {
         super.viewDidLoad()
         if userUIDConstant != nil {
             let reference = Database.database().reference()
-            reference.child("Users").child(userUIDConstant!).child("name").observeSingleEvent(of: .value, with: { (snapshot) in
-                if let name = snapshot.value as? String {
-                    nameConstant = name
-                    print(userUIDConstant!)
-                    self.performSegue(withIdentifier: "DummySplashScreen", sender: nil)
+            reference.child("Users").child(userUIDConstant!).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let dictionary = snapshot.value as? Dictionary<String, AnyObject> {
+                    if let username = dictionary["username"] {
+                        usernameConstant = username as! String
+                    }
+                    if let nameValue = dictionary["name"] {
+                        nameConstant = nameValue as! String
+                    }
                 }
+            
             })
         }
         // Do any additional setup after loading the view.

@@ -66,7 +66,7 @@ class FriendsViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     @IBAction func addFriendsButtonClicked(_ sender: Any) {
-        let fileData = UIImageJPEGRepresentation(#imageLiteral(resourceName: "Friends Icon"), 0.5)!
+        let fileData = UIImageJPEGRepresentation(UIImage(named: "Default Profile")!, 1.0)!
         let storageRef = storage.reference().child(userUIDConstant!).child("profilePhoto")
         storageRef.putData(fileData).observe(.success) { (snapshot) in
             // When the image has successfully uploaded, we get it's download URL

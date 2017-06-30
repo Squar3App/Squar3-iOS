@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		703E384A1899746DF5F5E18B /* Pods_Squar3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBA5BAA20A40633C7D03205 /* Pods_Squar3.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D5197E011F05AFD900B22ECC /* DummyLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5197E001F05AFD900B22ECC /* DummyLaunchScreen.swift */; };
-		D523A2A21F02218000AB31DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D523A2A11F02218000AB31DA /* Assets.xcassets */; };
 		D56ADC641F02100B00807D1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56ADC631F02100B00807D1F /* AppDelegate.swift */; };
 		D56ADC791F02100C00807D1F /* Squar3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56ADC781F02100C00807D1F /* Squar3Tests.swift */; };
 		D56ADC891F02107A00807D1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56ADC851F02107A00807D1F /* LaunchScreen.storyboard */; };
@@ -55,6 +54,7 @@
 		D5839BDD1F05679A0013BEDE /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5839BDB1F05679A0013BEDE /* FriendCollectionViewCell.swift */; };
 		D5C370C31F02CB9F00BF697C /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C370C21F02CB9F00BF697C /* Buttons.swift */; };
 		D5C370C51F02CD8000BF697C /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C370C41F02CD8000BF697C /* Border.swift */; };
+		D5DC3CB21F06C2EA0065A16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DC3CB11F06C2EA0065A16E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		6C41C81D7BFCB3BC7A33D068 /* Pods-Squar3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squar3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squar3/Pods-Squar3.debug.xcconfig"; sourceTree = "<group>"; };
 		9EBA5BAA20A40633C7D03205 /* Pods_Squar3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squar3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5197E001F05AFD900B22ECC /* DummyLaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyLaunchScreen.swift; sourceTree = "<group>"; };
-		D523A2A11F02218000AB31DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D56ADC601F02100B00807D1F /* Squar3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squar3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56ADC631F02100B00807D1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D56ADC741F02100C00807D1F /* Squar3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Squar3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +114,7 @@
 		D5839BDB1F05679A0013BEDE /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
 		D5C370C21F02CB9F00BF697C /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		D5C370C41F02CD8000BF697C /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		D5DC3CB11F06C2EA0065A16E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		DE1A4C7815FD6BEC11714892 /* Pods-Squar3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squar3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Squar3/Pods-Squar3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,8 +182,8 @@
 				D5839B9B1F0410210013BEDE /* Controller */,
 				D5839B9A1F04101C0013BEDE /* View */,
 				D5839B991F0410180013BEDE /* Model */,
+				D5DC3CB11F06C2EA0065A16E /* Assets.xcassets */,
 				D56ADC631F02100B00807D1F /* AppDelegate.swift */,
-				D523A2A11F02218000AB31DA /* Assets.xcassets */,
 				D56ADC871F02107A00807D1F /* Main.storyboard */,
 				D56ADC851F02107A00807D1F /* LaunchScreen.storyboard */,
 				D56ADC8B1F02109F00807D1F /* Info.plist */,
@@ -324,7 +324,7 @@
 				TargetAttributes = {
 					D56ADC5F1F02100B00807D1F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3A4L8XBTN6;
+						DevelopmentTeam = DKQFA7G679;
 						ProvisioningStyle = Automatic;
 					};
 					D56ADC731F02100C00807D1F = {
@@ -376,7 +376,6 @@
 				D5839BCA1F0454900013BEDE /* Icon-Small-50x50@1x.png in Resources */,
 				D5839BC51F0454900013BEDE /* Icon-App-72x72@2x.png in Resources */,
 				D56ADC891F02107A00807D1F /* LaunchScreen.storyboard in Resources */,
-				D523A2A21F02218000AB31DA /* Assets.xcassets in Resources */,
 				D5839BC81F0454900013BEDE /* Icon-App-76x76@3x.png in Resources */,
 				D5839BBC1F0454900013BEDE /* Icon-App-40x40@1x.png in Resources */,
 				D5839BC61F0454900013BEDE /* Icon-App-76x76@1x.png in Resources */,
@@ -384,6 +383,7 @@
 				D5839BBE1F0454900013BEDE /* Icon-App-40x40@3x.png in Resources */,
 				D5839BBD1F0454900013BEDE /* Icon-App-40x40@2x.png in Resources */,
 				D5839BB91F0454900013BEDE /* Icon-App-29x29@1x.png in Resources */,
+				D5DC3CB21F06C2EA0065A16E /* Assets.xcassets in Resources */,
 				D5839BCB1F0454900013BEDE /* Icon-Small-50x50@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,10 +608,11 @@
 			baseConfigurationReference = 6C41C81D7BFCB3BC7A33D068 /* Pods-Squar3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3A4L8XBTN6;
+				DEVELOPMENT_TEAM = DKQFA7G679;
 				INFOPLIST_FILE = Squar3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ryan.Squar3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ryan.Squar3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -622,10 +623,11 @@
 			baseConfigurationReference = DE1A4C7815FD6BEC11714892 /* Pods-Squar3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3A4L8XBTN6;
+				DEVELOPMENT_TEAM = DKQFA7G679;
 				INFOPLIST_FILE = Squar3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ryan.Squar3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ryan.Squar3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
